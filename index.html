@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="images/777363585716283124.jpg">
+    <link rel="stylesheet" href="style.css">
+
+      
+    <title>THE VORTEXA</title>
+
+</head>
+
+<body>
+
+   <!-- NAVBAR-->
+   <nav class="navbar">
+      <a href="about.html">ABOUT ME </a>
+      <a href="skills.html">SKILLS </a>
+
+   </nav>
+
+   <section class="intro">
+
+      <div class="wc">
+         <h1>Welcome, to the Wormhole of Vortexa! Are you ready to enter?</h1>
+         <p>Step into the Universa and witness the lush life of Bratzy!</P>
+            
+          <style>@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+          </style>
+
+         <button id="downBtn">YES I ↓</button>
+
+         <script>
+            document.getElementById("downBtn").addEventListener("click", () => {
+                  window.scrollBy({
+                     top: 1130,
+                     behavior: "smooth"
+                  });
+            });
+         </script>
+
+         <audio id="bgMusic" loop>
+            <source src="sergequadrado-fairy-tale-loop-275534.mp3">
+         </audio>
+
+         <script>
+            const music = document.getElementById("bgMusic");
+            const button = document.getElementById("downBtn");
+
+            button.addEventListener("click", async () => {
+               if (music.paused) {
+                     try {
+                        await music.play();
+                        button.textContent = "";
+                     } catch (error) {
+                        button.textContent = "";
+                        console.error(error);
+                     }
+               } else {
+                     music.pause();
+                     button.textContent = "";
+               }
+            });
+         </script>
+
+
+      </div>
+
+   </section>
+
+   <section class="featured">
+
+      <div class="img">
+         <img src="buda.jpg" alt="buda">
+
+      </div>
+
+      <div class="featured-content">
+         <h1>Featured Public Activities</h1>
+         <p>Accomplishmets made by me thoroughout the semester. 
+            <br><em>"-See no Evil, Speak no Evil, Hear no Evil."</em>
+         </p>
+      </div>
+
+   </section>
+
+   <section class="activity">
+      <div class="card-container">
+
+            <div class="card">
+            
+               <a href="https://caluyajacobdasigan-cell.github.io/teachersmonth/">Click Me!</a>
+               <h2><em>Letters for Teachers</em></h2>
+               <p>Created to give an honor and appreciation for our honorable teachers.</p>
+
+            </div>
+
+            <div class="card">
+               <a href="https://caluyajacobdasigan-cell.github.io/storybook-webpage/">Click Me!</a>
+
+               <h2><em>Storybook</em></h2>
+               <p>Created to showcase stories by vary with descriptions.</p>
+
+            </div>
+
+            <div class="card">
+              <a href="https://caluyajacobdasigan-cell.github.io/multimedia-page/">Click Me!</a>
+
+               <h2><em>Profile</em></h2>
+               <p>Created for basic demonstration of a Profile webpage with a collage.</p>
+
+            </div>
+
+
+         </div>
+   </section>
+
+   <footer>
+        <p>&copy;Copyright 2026. Made with ♥ by Yours Truly, Yacov.</p>
+    </footer>
+
+</body>
+
+</html>
